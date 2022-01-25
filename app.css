@@ -1,0 +1,108 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.graphic {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.header {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: hsl(0, 0%, 59%);
+}
+
+span {
+    font-weight: 700;
+    color: black;
+}
+.caption {
+    margin-top: 0.5rem;
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.emailInput {
+    padding: 1rem;
+    border: 1px solid hsl(0, 0%, 59%);
+    color: hsl(0, 0%, 59%);
+    border-radius: 10%/80%;
+    width: 40%;
+    margin-right: 1rem;
+}
+
+button {
+    padding: 0 3rem;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    border: 1px solid hsl(223, 87%, 63%);
+    border-radius: 25%/100%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(224, 87%, 70%);
+    border: 1px solid hsl(224, 87%, 70%);
+}
+
+.errorMsg {
+    font-size: 12px;
+    color: hsl(354, 100%, 66%);
+    margin-bottom: 0;
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .container {
+        width: 80%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .emailInput {
+        width: 90%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    button {
+        width: 100%;
+        border-radius: 10%/80%;
+        padding: 1rem 2rem;
+    }
+}
